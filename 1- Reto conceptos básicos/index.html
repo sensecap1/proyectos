@@ -74,7 +74,9 @@
         <h2>¿Cubrimos tu evento?</h2>
         <p>Si necesitas que unos profesionales cubran tu evento deportivo, indícanos qué servicios te gustaría tener. En breve nos pondremos en contacto contigo para una valoración personalizada:</p>
 
-        <form action="registrar_datos_myweb.com" method="post">
+        <form action="registrar_datos_myweb.com" method="get" target="_self" enctype="application/x-www-form-urlencoded">
+          <fieldset>
+            <legend>Recogida de datos</legend>
           <p><label for="nombre">Tu Nombre:</label>
             <input type="text" id="nombre" style="background-color: #c0c0c0" placeholder="Escribe tu nombre" required></p>
 
@@ -95,7 +97,10 @@
             </select>
             <label for="otro_pais">¿Qué otro país?</label>
             <input type="text" id="otro_pais" style="background-color:#c0c0c0" placeholder="Pon aquí el país del evento"></p>
-            <p>Elige todas las opciones que quieras:</p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Selecciona las opciones deseadas</legend>
             <input type="checkbox" id="fotos_previas">
             <label for="checkbox">Imágenes previas a la salida</label><br>
             <input type="checkbox" id="fotos_salida">
@@ -115,12 +120,15 @@
             <label for="checkbox">Imágenes en Photocall</label><br>
 
             <label for="comentarios">Comentarios:</label>
-            <textarea id="comentarios" style="background-color:#c0c0c0" name="comentarios" rows="1" cols="80" placeholder="Añade aquí cualquier comentario al respecto">
+            <textarea id="comentarios" placeholder="Añade aquí cualquier comentario al respecto" style="background-color:#c0c0c0" name="comentarios" rows="2" cols="80">
             </textarea>
+          </fieldset>
 
           <p><input type="reset" value="Restablecer Formulario" />
           <input type="submit" value="Enviar" />
         </form></p><br>
+        <p>SÍGUENOS <a href="https://www.instagram.com/keepsakemediasport?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" > <img src="https://e7.pngegg.com/pngimages/722/1011/png-clipart-logo-icon-instagram-logo-instagram-logo-purple-violet-thumbnail.png" alt="icono instagram que lleva a la página de keepsake media sport" width="20" ></a></p>
+        <p>Copyright by keepsakemediasport</p>
       </footer>
     </body>
   </head>
