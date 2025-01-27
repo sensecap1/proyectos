@@ -1,0 +1,122 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #9ad79b;
+}
+
+header{
+  border-bottom: 1px dashed #9ad79b;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main{
+  padding-top: 90px;
+}
+
+@keyframes textito{
+  0%{
+    transform: translateX(-10vw);
+  }
+  100%{
+    transform: translateX(105vw);
+  }
+}
+
+@keyframes goku{
+  0%{
+    transform: translateX(-130vw);
+  }
+  100%{
+    transform: translateX(100vw);
+  }
+}
+
+img{
+  animation: goku 12s;
+  animation-iteration-count: infinite;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+}
+
+header h1{
+  padding: 30px;
+  animation: textito 10s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.content h2{
+  padding-top: 25px;
+}
+
+.content{
+  border-top: 1px dashed #9ad79b;
+  border-bottom: 1px dashed #9ad79b;
+  padding: 1px 0 20px 15px;
+  margin: 20px 10px 15px 0px;
+}
+
+.sidebar{
+  margin-left: 90%;
+  margin-right: 0.5%;
+  border: 1px dashed #9ad79b;
+  list-style-position: inside;
+}
+
+.sidebar ul{
+  padding: 10px;
+}
+
+.sidebar h3{
+  text-align: center;
+}
+
+.features h2 {
+  border-top: 1px dashed #9ad79b;
+  padding-top: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.features{
+ border-bottom: 1px dashed #9ad79b;
+ padding-bottom: 20px;
+ margin-bottom: 500px;
+}
+
+.feature{
+  width: 200px;
+  margin: auto;
+  text-align: center;
+}
+
+footer{
+  border-top: 1px dashed #9ad79b;
+  border-bottom: 1px dashed #9ad79b;
+  padding: 15px 0 15px 0;
+  margin: 20px 0 15px 0;
+  text-align: center;
+}
